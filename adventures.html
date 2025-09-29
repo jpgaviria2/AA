@@ -56,56 +56,305 @@
 </header>
 
 <main>
-  <section class="page-hero">
-    <div class="container">
-      <h1>Adventures</h1>
-      <p class="muted">Curated outdoor experiences for all levels.</p>
+  <section class="page-hero page-hero--adventures">
+    <div class="container hero-grid">
+      <div class="hero-main">
+        <span class="eyebrow">Adventure Marketplace</span>
+        <h1>Curated experiences for Anmore & the Tri-Cities</h1>
+        <p class="lead">Discover guided journeys, self-led routes, and gear rentals that celebrate our backyard. Members unlock early access and exclusive discounts while local hosts tap into a modern platform built for outdoor explorers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/membership.html">Unlock Member Access</a>
+          <a class="btn btn-ghost" href="#host">List your experience</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">Guided adventures</span>
+          <span class="tag">Bike tours</span>
+          <span class="tag">Indian Arm</span>
+          <span class="tag">Sasamat & Buntzen Lakes</span>
+          <span class="tag">Belcarra shoreline</span>
+        </div>
+      </div>
+      <aside class="hero-sidebar">
+        <div class="sidebar-card">
+          <h3>Membership perks</h3>
+          <ul class="checklist">
+            <li>48-hour early booking window</li>
+            <li>Member-only drop dates & flash seats</li>
+            <li>15% off rentals & shuttle add-ons</li>
+            <li>Community credits for referrals</li>
+          </ul>
+          <a class="text-link" href="/membership.html">See full membership</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>40+</strong>
+            <span>Local routes & workshops</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>Verified community hosts</span>
+          </div>
+          <div>
+            <strong>365</strong>
+            <span>Days of curated drop-ins</span>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
-  
-<section class="container section">
-  <div class="cards">
-    <article id="trails" class="card">
-      <div class="card-img gradient-1"></div>
-      <div class="card-body">
-        <h3>Trails & Summits</h3>
-        <p>Guided hikes and route recommendations for all levels.</p>
-        <ul class="bullets">
-          <li>Beginner to advanced routes</li>
-          <li>Safety briefings and stewardship tips</li>
-          <li>Sunrise & golden hour options</li>
+
+  <section class="section adventures-overview">
+    <div class="container overview-grid">
+      <div>
+        <h2>Built for locals, ready for visitors</h2>
+        <p class="muted">Anmore Adventures blends our own hosted outings with a marketplace of independent operators. Think of it as an Airbnb for outdoor experiences—except every listing is vetted, hyper-local, and backed by industry-leading logistics.</p>
+        <div class="pill-group">
+          <span class="pill-tag">Guided summits & ridge lines</span>
+          <span class="pill-tag">Paddle the Arm & inlet crossings</span>
+          <span class="pill-tag">No-drop road & gravel rides</span>
+          <span class="pill-tag">Trail stewardship activations</span>
+        </div>
+      </div>
+      <div class="overview-card">
+        <h3>Marketplace infrastructure</h3>
+        <ul class="feature-list">
+          <li><strong>Dynamic scheduling:</strong> Seasonal drops, pop-up events, and always-on experiences.</li>
+          <li><strong>Host tools:</strong> Availability calendars, waitlists, payouts, and reviews.</li>
+          <li><strong>Integrations ready:</strong> Supabase authentication and Resend notifications keep everything automated.</li>
+          <li><strong>Safety first:</strong> Required waivers, emergency protocols, and host support playbooks.</li>
         </ul>
       </div>
-    </article>
-    <article id="paddle" class="card">
-      <div class="card-img gradient-2"></div>
-      <div class="card-body">
-        <h3>Paddle Sessions</h3>
-        <p>Kayak, SUP, and canoe outings on scenic waters.</p>
-        <ul class="bullets">
-          <li>Calm lake intros & technique clinics</li>
-          <li>Sunset paddles & photo ops</li>
-          <li>Gear rentals available</li>
+    </div>
+  </section>
+
+  <section class="section experiences" id="experiences">
+    <div class="container">
+      <header class="section-header">
+        <h2>Featured drops & guided collections</h2>
+        <p class="muted">Curated by the Anmore Adventures team and trusted partners. Membership guarantees early access and discounted gear add-ons.</p>
+      </header>
+      <div class="market-grid">
+        <article class="experience-card">
+          <div class="experience-header">
+            <span class="badge">Guided</span>
+            <span class="experience-meta">Belcarra • 3 hours</span>
+          </div>
+          <h3>Belcarra Shoreline Exploration</h3>
+          <p>Interpretive hike & paddle duo exploring coastal rainforests, tidal pools, and the calm estuary edges with certified guides.</p>
+          <ul class="experience-highlights">
+            <li>Includes SUP or kayak rental with safety brief</li>
+            <li>Warm-down fireside tea at Camp Howdy</li>
+            <li>Member perk: reserve rentals 48h early</li>
+          </ul>
+          <footer>
+            <span class="host">Hosted by Anmore Adventures</span>
+            <span class="member-callout">Members save 15% on gear</span>
+          </footer>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <span class="badge badge-secondary">Ride</span>
+            <span class="experience-meta">Tri-Cities • Half-day</span>
+          </div>
+          <h3>Tri-Cities Flow & Gravel Tours</h3>
+          <p>No-drop group rides through Port Moody, Coquitlam, and Anmore with skill workshops, trail progression clinics, and local coffee stops.</p>
+          <ul class="experience-highlights">
+            <li>Progression tiers: intro, intermediate, advanced</li>
+            <li>Optional e-bike upgrades from partner shops</li>
+            <li>Member perk: complimentary bike check</li>
+          </ul>
+          <footer>
+            <span class="host">Hosted by Flow State Collective</span>
+            <span class="member-callout">Members ride free every 5th session</span>
+          </footer>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <span class="badge badge-tertiary">Water</span>
+            <span class="experience-meta">Indian Arm • Sunrise</span>
+          </div>
+          <h3>Indian Arm Fjord Paddle</h3>
+          <p>Expedition-style SUP or kayak trip launching from the inlet, with floating breakfasts, wildlife interpretation, and shoreline stewardship.</p>
+          <ul class="experience-highlights">
+            <li>Logistics support: dry bags, radios, rescue support</li>
+            <li>Add-on campsites & water taxi returns</li>
+            <li>Member perk: priority on limited permits</li>
+          </ul>
+          <footer>
+            <span class="host">Hosted by Coastal Range Outfitters</span>
+            <span class="member-callout">Members save $40 per booking</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section lakes">
+    <div class="container">
+      <header class="section-header">
+        <h2>Sasamat, Buntzen, and beyond</h2>
+        <p class="muted">A lake district built for micro-adventures and weekday resets.</p>
+      </header>
+      <div class="lake-grid">
+        <article class="lake-card">
+          <h3>Sasamat Sunset Circuits</h3>
+          <p>Golden-hour paddles with floating charcuterie, glow gear upgrades, and shoreline yoga landings.</p>
+          <ul class="bullets">
+            <li>Gear concierge with onsite drop & sanitization</li>
+            <li>Community soundtrack curated by local DJs</li>
+            <li>Members: bring-a-friend voucher each month</li>
+          </ul>
+        </article>
+        <article class="lake-card">
+          <h3>Buntzen Ridge & Plunge</h3>
+          <p>Morning ridge hike, lake plunge, and cold water recovery coaching supported by certified guides.</p>
+          <ul class="bullets">
+            <li>Trail-to-water gear shuttle</li>
+            <li>Post-adventure nutrition add-on</li>
+            <li>Members: priority for limited group sizes</li>
+          </ul>
+        </article>
+        <article class="lake-card">
+          <h3>Belcarra Paddle & Picnic Rentals</h3>
+          <p>Reserve kayaks, SUPs, and picnic kits through the gear marketplace with optional private guide add-ons.</p>
+          <ul class="bullets">
+            <li>Instant host messaging & itinerary builder</li>
+            <li>Adaptive equipment inventory</li>
+            <li>Members: 20% off weekday rentals</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section seasonal">
+    <div class="container">
+      <header class="section-header">
+        <h2>Seasonal spotlights</h2>
+        <p class="muted">Limited run adventures that drop throughout the year. Join the waitlist so you never miss a seat.</p>
+      </header>
+      <div class="seasonal-grid">
+        <article class="seasonal-card">
+          <span class="badge">Winter</span>
+          <h3>Sasquatch Mountain Group Sessions</h3>
+          <p>Community ski & snowboard days with shuttle add-ons, hot lodge meetups, and progression coaching.</p>
+          <span class="member-callout">Members get first pick on bus seats.</span>
+        </article>
+        <article class="seasonal-card">
+          <span class="badge badge-secondary">Spring</span>
+          <h3>Grouse Mountain Bike Park Drops</h3>
+          <p>Bike park laps with local pros, demo fleets, and après socials overlooking the city lights.</p>
+          <span class="member-callout">Members save on rental upgrades.</span>
+        </article>
+        <article class="seasonal-card">
+          <span class="badge badge-tertiary">Summer</span>
+          <h3>Whistler Adventure Transfers</h3>
+          <p>Pop-up trips to the alpine playground: Via Ferrata, canyon swings, or gravel epics with logistics handled.</p>
+          <span class="member-callout">Members get early booking on limited seats.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section marketplace-engine">
+    <div class="container engine-grid">
+      <div class="engine-card">
+        <h2>Everything you need to launch & scale experiences</h2>
+        <p class="muted">Operate like a modern adventure hub with a unified dashboard, automated communications, and tools that empower hosts and members alike.</p>
+        <ul class="feature-list">
+          <li><strong>Listings:</strong> Rich media gallery, kit lists, requirements, and add-on bundles.</li>
+          <li><strong>Bookings:</strong> Tiered pricing, membership gating, flexible payment windows.</li>
+          <li><strong>Operations:</strong> Guide rosters, risk management workflows, and incident logs.</li>
+          <li><strong>Engagement:</strong> Resend-powered drip campaigns, drop alerts, and post-trip follow-up.</li>
         </ul>
       </div>
-    </article>
-    <article id="ride" class="card">
-      <div class="card-img gradient-3"></div>
-      <div class="card-body">
-        <h3>Ride & Flow</h3>
-        <p>Community rides, skill-building, and flow trails.</p>
-        <ul class="bullets">
-          <li>No‑drop rides & welcoming pace groups</li>
-          <li>Technique workshops</li>
-          <li>Weekend epics & micro‑adventures</li>
+      <div class="engine-steps">
+        <h3>How the marketplace flows</h3>
+        <ol class="step-list">
+          <li><strong>Discover:</strong> Filter by activity, skill level, accessibility, and host rating.</li>
+          <li><strong>Reserve:</strong> Tap to book with instant confirmation or join the waitlist.</li>
+          <li><strong>Equip:</strong> Add rentals, shuttles, or meal kits in one checkout.</li>
+          <li><strong>Adventure:</strong> Receive guide briefs, route maps, and real-time notifications.</li>
+          <li><strong>Re-live:</strong> Share recaps, earn credits, and review your host.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section host" id="host">
+    <div class="container host-grid">
+      <div class="host-card">
+        <h2>Host with Anmore Adventures</h2>
+        <p class="muted">We provide the playbook, insurance support, and tech stack. You bring the passion, knowledge, and connection to place.</p>
+        <ul class="feature-list">
+          <li><strong>Apply & onboard:</strong> Verified background checks, certifications, and brand alignment.</li>
+          <li><strong>Launch:</strong> Build listings, set availability, and publish to members first.</li>
+          <li><strong>Earn:</strong> Transparent payouts, tipping, and revenue share on gear rentals.</li>
+          <li><strong>Grow:</strong> Access training labs, marketing support, and co-host opportunities.</li>
         </ul>
       </div>
-    </article>
-  </div>
-  <div class="center m-top">
-    <a class="btn btn-primary" href="/membership.html">Get Early Access</a>
-  </div>
-</section>
+      <div class="host-cta">
+        <div class="sidebar-card">
+          <h3>Host requirements</h3>
+          <ul class="checklist">
+            <li>First aid & emergency action plan</li>
+            <li>Inclusive & sustainable practices</li>
+            <li>Local knowledge or specialized skills</li>
+            <li>Commitment to community stewardship</li>
+          </ul>
+        </div>
+        <a class="btn btn-accent" href="mailto:hosts@anmoreadventures.com">Start your host application</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section membership">
+    <div class="container membership-grid">
+      <div>
+        <h2>Membership unlocks more adventure</h2>
+        <p class="muted">From early access to drop calendars to rental savings, membership keeps you first in line for the region’s best outdoor experiences.</p>
+        <ul class="feature-list">
+          <li><strong>Early access:</strong> 48-hour head start on all marketplace listings.</li>
+          <li><strong>Discounts:</strong> Save on bikes, paddle gear, vehicle shuttles, and premium upgrades.</li>
+          <li><strong>Community:</strong> Private events, volunteer days, and mentorship cohorts.</li>
+          <li><strong>Insider intel:</strong> Weekly conditions brief, trail updates, and partner perks.</li>
+        </ul>
+      </div>
+      <div class="membership-card">
+        <h3>Membership snapshot</h3>
+        <div class="membership-stats">
+          <div>
+            <strong>$19/mo</strong>
+            <span>Founding member pricing</span>
+          </div>
+          <div>
+            <strong>4+</strong>
+            <span>New drops every month</span>
+          </div>
+          <div>
+            <strong>25%</strong>
+            <span>Average rental savings</span>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="/membership.html">Join the membership</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <div class="container join-inner">
+      <div>
+        <h2>Ready to explore?</h2>
+        <p class="lead">Create your profile, build your wish list, and get notified when new adventures drop.</p>
+      </div>
+      <div class="join-actions">
+        <a class="btn btn-primary" href="/membership.html">Become a member</a>
+        <a class="btn btn-ghost" href="mailto:hello@anmoreadventures.com">Talk to the team</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
