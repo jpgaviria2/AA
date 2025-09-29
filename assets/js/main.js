@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', function() {
       const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', !isExpanded);
-      siteNav.style.display = isExpanded ? 'none' : 'block';
+      siteNav.classList.toggle('open');
       
       // Animate hamburger menu
       const spans = navToggle.querySelectorAll('span');
