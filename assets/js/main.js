@@ -206,12 +206,14 @@ function initSupabase() {
     return;
   }
 
-  if (typeof window.createClient !== 'function') {
+  const supabaseLib = window.supabase;
+
+  if (!supabaseLib || typeof supabaseLib.createClient !== 'function') {
     console.error('Supabase client library not loaded.');
     return;
   }
 
-  const supabase = window.createClient(projectUrl, anonKey, {
+  const supabase = supabaseLib.createClient(projectUrl, anonKey, {
     auth: {
       persistSession: false,
       autoRefreshToken: false
