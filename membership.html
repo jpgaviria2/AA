@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="https://esm.sh/@supabase/supabase-js@2.45.1" data-supabase-script data-project-url="https://endujwgmlgtdlefiacds.supabase.co" data-anon-key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVuZHVqd2dtbGd0ZGxlZmlhY2RzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkxOTEyNzEsImV4cCI6MjA3NDc2NzI3MX0.kwT7xriExjb6u6HjouUkhxheSM1fRn3CaqbVgWNTwGg"></script>
     <script defer src="assets/js/main.js"></script>
     <script>window.DATA = { siteName: 'Anmore Adventures' };</script>
     <script type="application/ld+json">{
@@ -82,14 +83,14 @@
   </div>
   <div class="card">
     <h3>Value Calculator</h3>
-    <div class="value-calc">
-      <label for="tripCount2">Trips this season: <output id="tripCountOut2">4</output></label>
-      <input id="tripCount2" type="range" min="0" max="20" value="4" step="1" />
+    <div class="value-calc" data-value-calc data-savings-rate="75" data-deals-rate="25">
+      <label for="membership-trip-count">Trips this season: <output data-output="trips">4</output></label>
+      <input id="membership-trip-count" name="membership_trip_count" type="range" min="0" max="20" value="4" step="1" aria-valuemin="0" aria-valuemax="20" aria-valuenow="4" />
       <div class="calc-stats">
-        <div><span class="muted small">Estimated savings</span><strong id="savingOut2">$240</strong></div>
-        <div><span class="muted small">Exclusive deals</span><strong id="dealOut2">$80</strong></div>
+        <div><span class="muted small">Estimated savings</span><strong data-output="savings">$300</strong></div>
+        <div><span class="muted small">Exclusive deals</span><strong data-output="deals">$100</strong></div>
       </div>
-      <p class="small muted">Numbers are illustrative; actual perks vary by partner and season.</p>
+      <p class="small muted">Illustrative savings based on member discounts and partner perks.</p>
     </div>
   </div>
 </section>
@@ -104,6 +105,81 @@
         <li>Community events</li>
       </ul>
       <a class="btn btn-primary btn-lg" href="#join">Become a Member</a>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="join join--membership">
+  <div class="container join-grid">
+    <div class="join-copy">
+      <h2>Ready to join the club?</h2>
+      <p class="lead">Founding members unlock early drops, invite-only events, and serious savings on adventures and gear.</p>
+      <ul class="checks">
+        <li>Founding rate locked for life</li>
+        <li>Priority access to seasonal drops</li>
+        <li>Member concierge & on-trip support</li>
+      </ul>
+    </div>
+    <div class="join-form-card card">
+      <h3>Membership waitlist</h3>
+      <p class="muted small">Tell us a bit about yourself and we’ll follow up with next steps.</p>
+      <form data-membership-form novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Full name *</span>
+            <input type="text" name="full_name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Email *</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+          <label>
+            <span>Preferred plan</span>
+            <select name="membership_plan">
+              <option value="">Select</option>
+              <option value="founding-season">Founding season pass</option>
+              <option value="month-to-month">Month to month</option>
+              <option value="family">Family / household</option>
+              <option value="corporate">Corporate crew</option>
+            </select>
+          </label>
+          <label>
+            <span>Trips you aim to take</span>
+            <input type="number" name="trips_per_season" min="0" max="40" value="4" />
+          </label>
+        </div>
+
+        <fieldset class="form-fieldset">
+          <legend>Interests</legend>
+          <label class="checkbox">
+            <input type="checkbox" name="interests" value="trail" /> Trail & summit days
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="interests" value="paddle" /> Paddle & water adventures
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="interests" value="ride" /> Road, gravel & MTB rides
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="interests" value="winter" /> Winter sports & shuttles
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="interests" value="events" /> Community events & volunteering
+          </label>
+        </fieldset>
+
+        <label class="form-textarea">
+          <span>Anything we should know?</span>
+          <textarea name="notes" rows="4" maxlength="2000"></textarea>
+        </label>
+
+        <button class="btn btn-primary btn-lg" type="submit">Join the waitlist</button>
+        <span class="form-status" data-form-status aria-live="polite"></span>
+      </form>
     </div>
   </div>
 </section>
